@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() , RecyclerViewHolder.ItemClickListnear{
         setContentView(R.layout.activity_main)
 
 
-        //ここでUnresolved reference:array でコンパイルが通らない。。。
+        //ここでエラー「Unresolved reference:array」 でコンパイルが通らない。
+        // arrayが良くないのだと思いますがよくわかりません。
         val hoges = resources.getStringArray(R.array<String>.hoges).toMutableList()
 
         viewAdapter = RecycllerAdapter(this, this, hoges)
